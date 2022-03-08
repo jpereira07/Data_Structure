@@ -7,7 +7,7 @@ package com.mycompany.data_structure;
  */
 public class recursion {
     
-    static int arr[]={12, 24, 5, 7, 9};
+    //static int arr[]={12, 24, 5, 7, 9};
     
     public static int factorial(int n) {
         if (n==0){

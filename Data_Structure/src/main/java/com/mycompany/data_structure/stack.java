@@ -1,11 +1,16 @@
 
 package com.mycompany.data_structure;
+import static com.mycompany.data_structure.Main.arr;
+
 
 /**
  *
  * @author jose
  */
 public class stack {
+    
+    //static int matrix[][] = {{1,2,3},{4,5,6},{7,8,9}};
+
     private node top;
     private int lenght;
     
@@ -55,8 +60,39 @@ public class stack {
         }
         lenght++;
     }
+    
+    /*public static int problema5(int matrix[], int value){
+        node newNode= new node();
+        newNode.setValue(value);
+        
+        if (isEmpty()){
+            // inicializa la pila con el newNode
+            top=newNode;
+            System.out.println("Se agrego nuestro nuevo nodo al top de la pila: ");
+            System.out.println(top.getValue());
+            return 0;
+        }
+        else{
+            for(int i=0; i<matrix.length; i++){
+                newNode.setNext(top);
+                top=newNode;
+                System.out.println("Se agrego nuestro nuevo nodo al top de la pila: ");
+                System.out.println(top.getValue());
+                for(int j=0; j<matrix.length; j++){
+                    newNode.setNext(top);
+                    top=newNode;
+                    System.out.println("Se agrego nuestro nuevo nodo al top de la pila: ");
+                    System.out.println(top.getValue());
+                }
+            }
+            return 
+        }
+    }
+    */
+        
+        
     /**
-     * quita el top de la pila
+     * saca el top de la pila
      */
     public void pop (){
         if(isEmpty()){
