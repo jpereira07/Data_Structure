@@ -10,6 +10,7 @@ public class nodeLista {
     
     persona persona;
     nodeLista next;
+    private persona dato;
 
     public nodeLista(persona persona) {
         this.persona = persona;
@@ -31,5 +32,18 @@ public class nodeLista {
         this.next = next;
     }
 
+    public persona getDato() {
+        return dato;
+    }
+
+    public void setDato(persona dato) {
+        this.dato = dato;
+    }
+    
+        @Override
+    public String toString() {
+        return "nodeLista{" + "dato=" + dato + '}';
+    }
+    
     
 }

@@ -88,4 +88,21 @@ public class list {
 
     }
     
+    //Practica #1, buscar un string en una lista
+    //imprimir el valor antes de la posicion indicada
+    public void practica1(String nombre){
+        nodeLista aux = cabeza;
+        while(aux != null){
+            if(nombre == aux.getPersona().getNombre()){
+                System.out.println("La posicion anterior es:"+aux);
+                System.out.println("existe");
+            }
+            else{
+                System.out.println("No existe");
+            }
+            aux = aux.getNext();
+        }
+        
+    }
+    
 }

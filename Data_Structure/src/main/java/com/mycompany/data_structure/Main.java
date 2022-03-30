@@ -66,7 +66,7 @@ public class Main {
         //System.out.println(stack.problema5(matrix));
         
         
-        list miLista = new list();
+        /*list miLista = new list();
         miLista.insertar(new persona(5, "Juan"));
         miLista.insertar(new persona(10, "Pablo"));
         miLista.insertar(new persona(4, "Maria"));
@@ -77,8 +77,14 @@ public class Main {
         miLista.existe(5);
         miLista.modificar(6, "Jose");
         miLista.imprimirLista();
-
+        //miLista.practica1("Juan");
+        */
+        listaCircular miLista = new listaCircular();
         
-
+        miLista.insertar(new persona(1, "Pedro1"));
+        miLista.insertar(new persona(2, "Juan2"));
+        miLista.insertar(new persona(3, "Luz3"));
+        miLista.insertar(new persona(4, "Jose4"));
+        
     }
 }
