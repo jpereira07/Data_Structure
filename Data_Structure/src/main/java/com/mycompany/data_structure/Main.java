@@ -79,12 +79,29 @@ public class Main {
         miLista.imprimirLista();
         //miLista.practica1("Juan");
         */
-        listaCircular miLista = new listaCircular();
+        /*listaCircular miLista = new listaCircular();
         
         miLista.insertar(new persona(1, "Pedro1"));
         miLista.insertar(new persona(2, "Juan2"));
         miLista.insertar(new persona(3, "Luz3"));
         miLista.insertar(new persona(4, "Jose4"));
+        */
         
+        ArbolBinario arbol = new ArbolBinario();
+        arbol.inserta(50);
+        arbol.inserta(20);    
+        arbol.inserta(80);
+        arbol.inserta(15);
+        arbol.inserta(30);
+        arbol.inserta(14);
+        arbol.inserta(12);
+        System.out.println("Datos del arbol: ");
+        arbol.inOrden();
+        System.out.println("Dato menor del arbol: ");
+        arbol.imprimirMenor();
+        System.out.println("Datos sin hijos/hojas: ");
+        arbol.imprimeHojas();
+        System.out.println("Altura del arbol: ");
+        arbol.retornarAltura();
     }
 }

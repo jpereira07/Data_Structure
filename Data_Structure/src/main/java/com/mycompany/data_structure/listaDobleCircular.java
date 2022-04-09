@@ -72,5 +72,6 @@ public class listaDobleCircular {
         else if(ultimo.getPersona().getId() == id){
             return true;
         }
+        return true;
     }
 }

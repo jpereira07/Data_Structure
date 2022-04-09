@@ -57,14 +57,14 @@ public class list {
     
     public boolean existe(int id){
         nodeLista aux = cabeza;
-        //boolean found = false;
+        boolean found = false;
         while(aux != null){
             if(id == aux.getPersona().getId()){
                 return true;
             }
             aux = aux.getNext();
         }
-        return false;
+        return found;
     }
     
     public void modificar(int id, String nombre){
@@ -77,16 +77,6 @@ public class list {
         }
     }
     
-    public void eliminar(persona p){
-        nodeLista aux = cabeza;
-        while (aux != null){
-            if(p == aux.getPersona().getId()){
-                
-            }
-            aux = aux.getNext();
-        }
-
-    }
     
     //Practica #1, buscar un string en una lista
     //imprimir el valor antes de la posicion indicada
